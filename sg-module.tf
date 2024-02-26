@@ -27,3 +27,6 @@ resource "aws_security_group" "terraform" {
         cidr_blocks = [ "0.0.0.0/0" ]
     }
 }
+output "security_group_id" {
+  value = aws_security_group.terraform.id
+}
